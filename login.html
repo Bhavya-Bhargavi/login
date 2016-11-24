@@ -1,0 +1,60 @@
+<html>
+<head>
+
+  <!-- Stylesheets -->
+  <link href='bower_components/bootstrap/dist/css/bootstrap.css' rel="stylesheet">  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+
+  <!--Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <nav class="containerAbt">
+        <ul class="mainnav">
+            <li class="shoponlinenav" onclick="document.getElementById('id01').style.display='block'"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+    <div id="id01" class="modal">        
+    <div class="container-fluid animate">      
+    <div class="row">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+      <div class="col-md-6 left-side">
+        <header>
+          <span>Already a member</span>
+          <h3>Login<br>to continue</h3>
+        </header>
+      </div>
+      <div class="col-md-6 right-side">
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" type="text" id="name" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+            <span class="input__label-content input__label-content--hoshi">Name</span>
+          </label>
+        </span>
+        
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" type="password" id="password" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="password">
+            <span class="input__label-content input__label-content--hoshi">Password</span>
+          </label>
+        </span>
+        
+        <div class="cta">
+          <button class="btn btn-primary pull-left" >
+             Login</a>  </button>
+             <span><a href="register.html">Sign Up here</a></span>        
+        </div>
+        <ul class="social list-inline">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
